@@ -1,0 +1,43 @@
+form{
+    width: 100%;
+}
+
+form div + div{
+    margin-top: 1em;
+}
+
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: end;
+}
+
+.cadastrar {
+    padding-left: 130px;
+}
+
+.voltar{
+    padding-left: 130px;
+}
+
+.salvar{
+    margin-top: 1em;
+    padding-left: 130px;
+}
+
+.user, .count{
+    text-align: center;
+}
+
+.cdstconta{
+    display: initial;
+}
+
+.btnCadastrar {
+    margin-left: 130px;
+    margin-top: 20px;
+}
+
+.btnVoltar {
+    margin-left: 145px;
+}
