@@ -1,36 +1,36 @@
 <html>
-    <head>
-        <title>INCLUIR CLIENTES</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/style.css">
-    </head>
-    <body>
-        <h1>CADASTRO DE CLIENTE</h1>
-        <form action="inserircliente.jsp" method="post">
-            <div>
-                <label for="cpf"> CPF: </label>
-                <input type="text" name="cpf" required/>
-            </div>
-            <div>
-                <label for="nome"> Nome: </label>
-                <input type="text" name="nome" required/>
-            </div>
-            <div>
-                <label for="sexo"> Sexo: </label>
-                <select name="sexo" required>
-                    <option disabled selected>Selecione</option>
-                    <option value="F">Feminino</option>
-                    <option value="M">Masculino</option>
-                </select>
-            </div>
-            
-            <div>
-                <label for="fone"> Telefone: </label>
-                <input type="tel" name="fone" required/>
-            </div>
-            <button class="btnCadastrar" type="submit"> CADASTRAR </button>
-        </form>
-        <input class="btnVoltar" type="button" value="VOLTAR" onclick="window.location.href='cadastrocliente.html'">
-    </body>
+  <head>
+    <title>INCLUIR CLIENTES</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>CADASTRO DE CLIENTE</h1>
+    <form action="inserircliente.jsp" method="post">
+      <div>
+        <label for="cpf"> CPF: </label>
+        <input type="text" name="cpf" required/>
+      </div>
+      <div>
+        <label for="nome"> Nome: </label>
+        <input type="text" name="nome" required/>
+      </div>
+      <div>
+        <label for="sexo"> Sexo: </label>
+        <select name="sexo" required>
+          <option disabled selected>Selecione</option>
+          <option value="F">Feminino</option>
+          <option value="M">Masculino</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="fone"> Telefone: </label>
+        <input type="tel" name="fone" required/>
+      </div>
+      <button class="btnCadastrar" type="submit"> CADASTRAR </button>
+    </form>
+    <input class="btnVoltar" type="button" value="VOLTAR" onclick="window.location.href = 'cadastrocliente.html'">
+  </body>
 </html>
