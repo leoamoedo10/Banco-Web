@@ -4,38 +4,38 @@
 <%@page import="repository.cliente.CPFJaCadastradoException"%>
 
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>INCLUIR CLIENTES</title>
-    </head>
-    <body>
-        
-        <%           
-            ControladorBanco controlador = ControladorBanco.getInstance();
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>INCLUIR CLIENTES</title>
+  </head>
+  <body>
 
-            String cpf = request.getParameter("cpf");
-            String nome = request.getParameter("nome");
-            String sexo = request.getParameter("sexo");
-            String fone = request.getParameter("fone");
+    <%
+      ControladorBanco controlador = ControladorBanco.getInstance();
 
-            Cliente cliente = new Cliente(cpf, nome, sexo.charAt(0), fone);
+      String cpf = request.getParameter("cpf");
+      String nome = request.getParameter("nome");
+      String sexo = request.getParameter("sexo");
+      String fone = request.getParameter("fone");
 
-            try {
-                controlador.inserirCliente(cliente);
-        %>
-            
-            <div>
-                <h2>Usuário cadastrado!</h2>
-            </div>
-                
-        <%
-            } catch (CPFJaCadastradoException ex) {
-                out.println(ex.getMessage());
-            }
-        %>
-        
-        <form class="voltar" action="cadastrocliente.html">
-            <button type="submit">VOLTAR</button>
-        </form>
-    </body>
+      Cliente cliente = new Cliente(cpf, nome, sexo.charAt(0), fone);
+
+      try {
+        controlador.inserirCliente(cliente);
+    %>
+
+    <div>
+      <h2>Usuário cadastrado!</h2>
+    </div>
+
+    <%
+      } catch (CPFJaCadastradoException ex) {
+        out.println(ex.getMessage());
+      }
+    %>
+
+    <form class="voltar" action="cadastrocliente.html">
+      <button type="submit">VOLTAR</button>
+    </form>
+  </body>
 </html>
