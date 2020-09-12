@@ -38,7 +38,7 @@
         }
       %>
 
-    </table>
+    </table>  
     <form class="voltar" action="cadastrocliente.html">
       <button type="submit">VOLTAR</button>
     </form>

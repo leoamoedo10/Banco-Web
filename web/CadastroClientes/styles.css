@@ -12,6 +12,10 @@ label {
   text-align: end;
 }
 
+input {
+  margin-top: 10px;
+}
+
 .btnCadastrar {
   margin-left: 130px;
   margin-top: 20px;
@@ -19,6 +23,10 @@ label {
 
 .btnVoltar {
   margin-left: 145px;
+}
+
+.voltar {
+  margin-top: 20px;
 }
 
 .user {
